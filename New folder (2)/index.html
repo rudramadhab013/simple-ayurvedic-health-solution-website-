@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4ff;
+        }
+        .container {
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+        <!-- Card 1 -->
+        <div class="container bg-indigo-900 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Fever</h3>
+            <p class="text-sm mb-4">
+                Take: Tulsi tea, Ginger juice, Turmeric milk<br>
+                Eat: Lemon, Orange, Light veg meals<br>
+                Do: Rest, Cold compress<br>
+                Vitamins: C, E<br>
+                Foods: Citrus fruits, Broth-based soups
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Fever\nTake: Tulsi tea, Ginger juice, Turmeric milk\nEat: Lemon, Orange, Light veg meals\nDo: Rest, Cold compress\nVitamins: C, E\nFoods: Citrus fruits, Broth-based soups')">Share</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="container bg-yellow-400 text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Cold</h3>
+            <p class="text-sm mb-4">
+                Take: Ginger tea, Honey, Steam inhalation<br>
+                Eat: Garlic soup, Citrus fruits<br>
+                Do: Nasal drops of Anu oil<br>
+                Vitamins: C, Zinc<br>
+                Foods: Chicken soup, Sweet potatoes
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Cold\nTake: Ginger tea, Honey, Steam inhalation\nEat: Garlic soup, Citrus fruits\nDo: Nasal drops of Anu oil\nVitamins: C, Zinc\nFoods: Chicken soup, Sweet potatoes')">Share</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="container bg-indigo-100 text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Cough</h3>
+            <p class="text-sm mb-4">
+                Take: Thyme tea, Honey, Turmeric milk<br>
+                Eat: Warm soup, Ginger<br>
+                Do: Steam inhalation<br>
+                Vitamins: C, E<br>
+                Foods: Honey, Pineapple
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Cough\nTake: Thyme tea, Honey, Turmeric milk\nEat: Warm soup, Ginger\nDo: Steam inhalation\nVitamins: C, E\nFoods: Honey, Pineapple')">Share</button>
+        </div>
+        <!-- Card 4 -->
+        <div class="container bg-white text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Headache</h3>
+            <p class="text-sm mb-4">
+                Take: Ginger juice, Peppermint oil<br>
+                Eat: Cold foods, Coconut water<br>
+                Do: Shavasana yoga, Eye massage<br>
+                Vitamins: B2, Magnesium<br>
+                Foods: Almonds, Bananas
+            </p>
+            <button class="bg-indigo-700 text-white rounded-full px-4 py-1" onclick="copyText('Headache\nTake: Ginger juice, Peppermint oil\nEat: Cold foods, Coconut water\nDo: Shavasana yoga, Eye massage\nVitamins: B2, Magnesium\nFoods: Almonds, Bananas')">Share</button>
+        </div>
+        <!-- Card 5 -->
+        <div class="container bg-indigo-100 text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Diarrhea</h3>
+            <p class="text-sm mb-4">
+                Take: ORS, Coconut water, Pomegranate juice<br>
+                Eat: Banana, Rice, Yogurt<br>
+                Do: Avoid spicy food<br>
+                Vitamins: Potassium, Zinc<br>
+                Foods: Electrolyte-rich foods, Probiotics
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Diarrhea\nTake: ORS, Coconut water, Pomegranate juice\nEat: Banana, Rice, Yogurt\nDo: Avoid spicy food\nVitamins: Potassium, Zinc\nFoods: Electrolyte-rich foods, Probiotics')">Share</button>
+        </div>
+        <!-- Card 6 -->
+        <div class="container bg-red-400 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Constipation</h3>
+            <p class="text-sm mb-4">
+                Take: Triphala powder, Warm water<br>
+                Eat: Fiber-rich foods, Leafy greens<br>
+                Do: Yoga - Pawanmuktasana<br>
+                Vitamins: Fiber, Magnesium<br>
+                Foods: Whole grains, Legumes
+            </p>
+            <button class="bg-white text-red-400 rounded-full px-4 py-1" onclick="copyText('Constipation\nTake: Triphala powder, Warm water\nEat: Fiber-rich foods, Leafy greens\nDo: Yoga - Pawanmuktasana\nVitamins: Fiber, Magnesium\nFoods: Whole grains, Legumes')">Share</button>
+        </div>
+        <!-- Card 7 -->
+        <div class="container bg-indigo-900 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Acidity</h3>
+            <p class="text-sm mb-4">
+                Take: Ginger juice, Aloe vera juice<br>
+                Eat: Alkaline foods, Cucumber<br>
+                Do: Avoid spicy food<br>
+                Vitamins: Calcium, Magnesium<br>
+                Foods: Almonds, Cucumber
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Acidity\nTake: Ginger juice, Aloe vera juice\nEat: Alkaline foods, Cucumber\nDo: Avoid spicy food\nVitamins: Calcium, Magnesium\nFoods: Almonds, Cucumber')">Share</button>
+        </div>
+        <!-- Card 8 -->
+        <div class="container bg-indigo-100 text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Skin Allergy</h3>
+            <p class="text-sm mb-4">
+                Take: Aloe vera gel, Coconut oil<br>
+                Eat: Anti-inflammatory foods<br>
+                Do: Avoid harsh soaps<br>
+                Vitamins: E, Omega-3<br>
+                Foods: Fatty fish, Flaxseeds
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Skin Allergy\nTake: Aloe vera gel, Coconut oil\nEat: Anti-inflammatory foods\nDo: Avoid harsh soaps\nVitamins: E, Omega-3\nFoods: Fatty fish, Flaxseeds')">Share</button>
+        </div>
+        <!-- Card 9 -->
+        <div class="container bg-red-400 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Joint Pain</h3>
+            <p class="text-sm mb-4">
+                Take: Turmeric milk, Ginger tea<br>
+                Eat: Omega-3 rich foods<br>
+                Do: Yoga - Vajrasana<br>
+                Vitamins: D, Calcium<br>
+                Foods: Fatty fish, Dairy
+            </p>
+            <button class="bg-white text-red-400 rounded-full px-4 py-1" onclick="copyText('Joint Pain\nTake: Turmeric milk, Ginger tea\nEat: Omega-3 rich foods\nDo: Yoga - Vajrasana\nVitamins: D, Calcium\nFoods: Fatty fish, Dairy')">Share</button>
+        </div>
+        <!-- Card 10 -->
+        <div class="container bg-indigo-900 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Stomach Pain</h3>
+            <p class="text-sm mb-4">
+                Take: Ginger juice, Ajwain seeds<br>
+                Eat: Light meals, Avoid oily food<br>
+                Do: Rest, Apply heat<br>
+                Vitamins: B6, Ginger<br>
+                Foods: Ginger, Probiotics
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Stomach Pain\nTake: Ginger juice, Ajwain seeds\nEat: Light meals, Avoid oily food\nDo: Rest, Apply heat\nVitamins: B6, Ginger\nFoods: Ginger, Probiotics')">Share</button>
+        </div>
+        <!-- Card 11 -->
+        <div class="container bg-indigo-100 text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Anxiety</h3>
+            <p class="text-sm mb-4">
+                Take: Ashwagandha tea, Chamomile tea<br>
+                Eat: Complex carbs, Leafy greens<br>
+                Do: Meditation, Yoga<br>
+                Vitamins: B6, Magnesium<br>
+                Foods: Fatty fish, Nuts
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Anxiety\nTake: Ashwagandha tea, Chamomile tea\nEat: Complex carbs, Leafy greens\nDo: Meditation, Yoga\nVitamins: B6, Magnesium\nFoods: Fatty fish, Nuts')">Share</button>
+        </div>
+        <!-- Card 12 -->
+        <div class="container bg-red-400 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Arthritis</h3>
+            <p class="text-sm mb-4">
+                Take: Turmeric milk, Ginger tea<br>
+                Eat: Omega-3 rich foods<br>
+                Do: Yoga - Vajrasana<br>
+                Vitamins: D, Calcium<br>
+                Foods: Fatty fish, Dairy
+            </p>
+            <button class="bg-white text-red-400 rounded-full px-4 py-1" onclick="copyText('Arthritis\nTake: Turmeric milk, Ginger tea\nEat: Omega-3 rich foods\nDo: Yoga - Vajrasana\nVitamins: D, Calcium\nFoods: Fatty fish, Dairy')">Share</button>
+        </div>
+        <!-- Card 13 -->
+        <div class="container bg-indigo-900 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Asthma</h3>
+            <p class="text-sm mb-4">
+                Take: Ginger tea, Honey<br>
+                Eat: Warm soup, Ginger<br>
+                Do: Steam inhalation<br>
+                Vitamins: C, E<br>
+                Foods: Honey, Pineapple
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Asthma\nTake: Ginger tea, Honey\nEat: Warm soup, Ginger\nDo: Steam inhalation\nVitamins: C, E\nFoods: Honey, Pineapple')">Share</button>
+        </div>
+        <!-- Card 14 -->
+        <div class="container bg-indigo-100 text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Boils</h3>
+            <p class="text-sm mb-4">
+                Take: Turmeric milk, Neem oil<br>
+                Eat: Antibacterial foods<br>
+                Do: Apply heat<br>
+                Vitamins: A, C<br>
+                Foods: Citrus fruits, Berries
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Boils\nTake: Turmeric milk, Neem oil\nEat: Antibacterial foods\nDo: Apply heat\nVitamins: A, C\nFoods: Citrus fruits, Berries')">Share</button>
+        </div>
+        <!-- Card 15 -->
+        <div class="container bg-red-400 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Cold Sores</h3>
+            <p class="text-sm mb-4">
+                Take: Aloe vera gel, Lemon juice<br>
+                Eat: Antiviral foods<br>
+                Do: Apply cold compress<br>
+                Vitamins: C, Lysine<br>
+                Foods: Citrus fruits, Chicken
+            </p>
+            <button class="bg-white text-red-400 rounded-full px-4 py-1" onclick="copyText('Cold Sores\nTake: Aloe vera gel, Lemon juice\nEat: Antiviral foods\nDo: Apply cold compress\nVitamins: C, Lysine\nFoods: Citrus fruits, Chicken')">Share</button>
+        </div>
+        <!-- Card 16 -->
+        <div class="container bg-indigo-900 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">High Blood Pressure</h3>
+            <p class="text-sm mb-4">
+                Take: Ashwagandha tea, Coenzyme Q10<br>
+                Eat: Low-sodium foods, Potassium-rich foods<br>
+                Do: Exercise regularly<br>
+                Vitamins: C, Potassium<br>
+                Foods: Leafy greens, Bananas
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('High Blood Pressure\nTake: Ashwagandha tea, Coenzyme Q10\nEat: Low-sodium foods, Potassium-rich foods\nDo: Exercise regularly\nVitamins: C, Potassium\nFoods: Leafy greens, Bananas')">Share</button>
+        </div>
+        <!-- Card 17 -->
+        <div class="container bg-indigo-100 text-indigo-900 rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Insomnia</h3>
+            <p class="text-sm mb-4">
+                Take: Chamomile tea, Valerian root<br>
+                Eat: Complex carbs, Warm milk<br>
+                Do: Meditation, Yoga<br>
+                Vitamins: B6, Magnesium<br>
+                Foods: Fatty fish, Nuts
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Insomnia\nTake: Chamomile tea, Valerian root\nEat: Complex carbs, Warm milk\nDo: Meditation, Yoga\nVitamins: B6, Magnesium\nFoods: Fatty fish, Nuts')">Share</button>
+        </div>
+        <!-- Card 18 -->
+        <div class="container bg-red-400 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Menstrual Cramps</h3>
+            <p class="text-sm mb-4">
+                Take: Ginger tea, Chamomile tea<br>
+                Eat: Warm foods, Omega-3 rich foods<br>
+                Do: Yoga - Pawanmuktasana<br>
+                Vitamins: B6, Magnesium<br>
+                Foods: Fatty fish, Nuts
+            </p>
+            <button class="bg-white text-red-400 rounded-full px-4 py-1" onclick="copyText('Menstrual Cramps\nTake: Ginger tea, Chamomile tea\nEat: Warm foods, Omega-3 rich foods\nDo: Yoga - Pawanmuktasana\nVitamins: B6, Magnesium\nFoods: Fatty fish, Nuts')">Share</button>
+        </div>
+        <!-- Card 19 -->
+        <div class="container bg-indigo-900 text-white rounded-2xl p-4">
+            <h3 class="font-semibold mb-2">Migraine</h3>
+            <p class="text-sm mb-4">
+                Take: Feverfew tea, Peppermint oil<br>
+                Eat: Cold foods, Magnesium-rich foods<br>
+                Do: Rest, Eye massage<br>
+                Vitamins: B2, Magnesium<br>
+                Foods: Almonds, Bananas
+            </p>
+            <button class="bg-white text-indigo-900 rounded-full px-4 py-1" onclick="copyText('Migraine\nTake: Feverfew tea, Peppermint oil\nEat: Cold foods, Magnesium-rich foods\nDo: Rest, Eye massage\nVitamins: B2, Magnesium\nFoods: Almonds, Bananas')">Share</button>
+        </div>
+    </div>
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Text copied to clipboard');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
